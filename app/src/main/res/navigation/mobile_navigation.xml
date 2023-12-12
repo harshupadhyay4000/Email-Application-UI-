@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.harshupadhyay.codemail.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_inbox"
+        android:name="com.harshupadhyay.codemail.ui.home.HomeFragment"
+        android:label="Inbox"
+        tools:layout="@layout/fragment_inbox" />
+
+    <fragment
+        android:id="@+id/nav_sent"
+        android:name="com.harshupadhyay.codemail.ui.sent.SentMail"
+        android:label="Sent Mail"
+        tools:layout="@layout/fragment_sent_mail" />
+
+    <fragment
+        android:id="@+id/nav_shedule"
+        android:name="com.harshupadhyay.codemail.ui.shedule.Schedule"
+        android:label="Schedule Mail"
+        tools:layout="@layout/fragment_schedule" />
+
+    <fragment
+        android:id="@+id/nav_draft"
+        android:name="com.harshupadhyay.codemail.ui.draft.Draft"
+        android:label="Draft Mail"
+        tools:layout="@layout/fragment_draft" />
+
+    <fragment
+        android:id="@+id/nav_trash"
+        android:name="com.harshupadhyay.codemail.ui.trash.Trash"
+        android:label="Trash"
+        tools:layout="@layout/fragment_trash" />
+</navigation>
